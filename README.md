@@ -5,6 +5,7 @@ Implementation of the proximal splitting algorithm from PL. Combettes and JL Pes
 Combettes, Patrick L., and Jean-Christophe Pesquet. "Proximal splitting methods in signal processing." Fixed-point algorithms for inverse problems in science and engineering. Springer, New York, NY, 2011. 185-212.
 </p>
 
+## General theory
 The purpose of the proximal methods is to solve the minimisation problem : 
 <p align="center">
 min f1(x) + f2(x)
