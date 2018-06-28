@@ -7,8 +7,11 @@ Combettes, Patrick L., and Jean-Christophe Pesquet. "Proximal splitting methods 
 
 The purpose of the proximal methods is to solve the minimisation problem : 
 <p align="center">
-min f1(x) + f2(x) 
+$min f1(x) + f2(x) $
 </p>
+![](http://mathurl.com/ya8zgu4t)
+
+
 where f1 and f2 are at leat convex lower semicontinuous functions of R^n to ]-\infty, +\infty] but not always equal to +\infty (i.e. a real minimum exists). 
 
 
