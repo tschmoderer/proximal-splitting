@@ -1,14 +1,14 @@
-# proximal-spitting
+# proximal-splitting
 Implementation of the proximal splitting algorithm from PL. Combettes and JL Pesquet article.
 
-<center>
+<p align="center">
 Combettes, Patrick L., and Jean-Christophe Pesquet. "Proximal splitting methods in signal processing." Fixed-point algorithms for inverse problems in science and engineering. Springer, New York, NY, 2011. 185-212.
-</center>
+</p>
 
 The purpose of the proximal methods is to solve the minimisation problem : 
-<center>
+<p align="center">
 min f1(x) + f2(x) 
-</center>
+</p>
 where f1 and f2 are at leat convex lower semicontinuous functions of R^n to ]-\infty, +\infty] but not always equal to +\infty (i.e. a real minimum exists). 
 
 
