@@ -1,4 +1,4 @@
-function x = forward_backward(f1,df2,x0)
+function x = forward_backward(f1,df2,x0,B,niter,threshold)
 %% Problem
 % Let f1 be a lower semicontinuous convex function from R^n to ]-\infty,+\infty]
 % And domain of f1 is non empty, that is to say f1 \neq +\infty 
@@ -20,7 +20,7 @@ function x = forward_backward(f1,df2,x0)
 %% Options In 
 % B  	  = the beta constant for the lipchitz gradient 	
 % niter   = max iterations, 
-% epsilon = threshold
+% threshold
 %% Options out
 % err = error of the solution 
 
@@ -32,9 +32,10 @@ function x = forward_backward(f1,df2,x0)
 		ln = epsilon +(1-epsilon)*rand(1); 
 		
 		yn = x0 - gn*df2(x0);
-		x1 = x0 + ln*(prox(@(x) gn*f1(x),yn)-xn);
+		x1 = x0 + ln*(prox(@(x) gn*f1(x),yn)-x0);
 		
 		err = norm(x1-x0); 
 		x0 = x1; n = n + 1;
-	end
+    end
+    x = x1;
 end
